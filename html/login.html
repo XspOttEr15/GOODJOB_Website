@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Login </title>
+        <link rel="stylesheet" href="css/stylelogin5.css">
+        <script src="js/login.js"></script>
+          
+    </head>
+
+    <body background="live01.mp4">
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post" action="home.html">
+                <div class="form-message-error" id="form-meserror"></div>
+                <div class="txt_field">
+                    <input type="text" name="user1" id="username" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="pass1" id="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                
+                    <input type="submit" id="login" value="Login" onclick="validate()">
+                
+                <div class="signup_link">
+                    Not a member? <a href="register.html">Register</a>
+                </div>
+            </form>
+        </div>    
+    </body>
+</html>
+
+

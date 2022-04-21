@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Register </title>
+        <link rel="stylesheet" href="css/styleregis5.css">
+        <script src="js/regis.js">
+        </script>
+        
+    
+          
+    </head>
+
+    <body>
+        <div class="center">
+            <h1>Register</h1>
+            <form method="post" action="login.html">
+                <div class="txt_field">
+                    <input type="text" name="user1" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" id="email" required>
+                    <span></span>
+                    <label>Email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="password"  onchange='check_pass();'/ required  >
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="confirm_password" onchange='check_pass();'/ required>
+                    <span></span>
+                    <label>Confirm Password</label>
+                </div>
+                <div class="pass"> 
+                    <input type="checkbox" > I accept the Terms of Use & Privacy Policy
+                </div><br><br><br><br>
+                <input type="submit" id="regist" value="Register">
+                <div class="signin_link">
+                    Already have an account? <a href="login.html">Login</a>
+                <br><br>
+                    
+                </div>
+            </form>
+        </div>    
+    </body>
+</html>
