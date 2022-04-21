@@ -1,0 +1,496 @@
+@media (max-width: 1024px) {
+    *{
+        box-sizing: border-box;
+    }
+    .our{
+        color: white;
+        text-align: center;
+        font-size: 80px;
+        margin-bottom: 100px;
+        margin-top: 1500px;
+        
+    }
+    .row{
+        display: table;
+        
+       
+    }
+    .column1{
+        width: 25%;
+        
+        display: block;
+        float: left;
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    .txtbox{
+        font-size: 20px;
+        color: white;
+        border: solid white;
+        padding: 10px;
+        margin: 20px;
+    }
+    .txtbox1{
+        font-size: 20px;
+        color: white;
+        border: solid white;
+        padding: 10px 50px 10px ;
+        margin-top: 20px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 20px;
+    }
+    .column2{
+        width: 33.333%;
+        
+        display: block;
+        float: left;
+        text-align: center; 
+        margin-top: 30px;
+    }
+    .column3{
+        width: 100%;
+        display: block;
+        float: left;
+        text-align: center; 
+    }
+        
+    body{
+        background: url("pic/BGAboutUs.png") no-repeat center center;
+       background-attachment: fixed;
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        box-sizing: border-box;
+        
+        
+        
+    }
+    .glowing-border {
+        border: 3px solid #dadada;
+        border-radius: 50%; 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+        width: 50%;
+        
+    }
+    
+    .glowing-border:focus { 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+    .glowing-boder:hover{
+        transition: 0.5s;
+        box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+    }
+    .btn {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+      
+        
+        
+        transition: all 0.3s ease;
+        border-radius: 50%;
+      }
+      
+      .btn:hover {
+        transition: all 0.3s ease;
+      }
+    .btn-glow:hover {
+        box-shadow: rgba(var(--primary-color), 1) 0px 0px 100px 0px;
+      }
+    
+    :root {
+        /* violet */
+        --primary-color: 111, 76, 255;
+    }
+    .banner{
+        width: 100%;
+        height: 70%;
+        top: 5%;
+        left: 0px;
+        
+        color: white;
+    }
+    .app-text{
+        width: 100%;
+        float: left;
+
+    }
+    .app-text h1{
+        font-size: 43px;
+        width: 640px;
+        text-align: center;
+        margin-left: 18%;
+    }
+    .app-text h2{
+        font-size: 100px;
+        width: 1024px;
+        margin-left: 0px;
+        text-align: center;
+        
+    }
+    .app-text p{
+        width: 90%;
+        font-size: 20px;
+        margin-left: 50px; 
+        margin-right: 50px;
+        line-height: 30px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+    }
+    .app-pic{
+        
+        width: 50%;
+        float: left;  
+    }
+    .app-pic img{
+        width: 70%;
+        margin-top: 50px;
+        margin-left: 320px;
+        
+        
+        
+        box-shadow: rgba(var(--text-color), 1) 0px 0px 50px 0px;
+       
+    }
+  }
+  @media (max-width: 414px) {
+    .our{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 100px;
+        margin-top: 1100px;
+    }
+    .row{
+        display: table;
+        
+       
+    }
+    .column1{
+        width: 50%;
+        
+        display: block;
+        float: left;
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    .column1 img{
+        width: 45%;
+    }
+    .txtbox{
+        font-size: 10px;
+        color: white;
+        border: solid white;
+        padding: 10px;
+        margin: 20px;
+    }
+    .txtbox1{
+        font-size: 10px;
+        color: white;
+        border: solid white;
+        padding: 10px 50px 10px ;
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20px;
+    }
+    .column2{
+        width: 50%;
+        
+        display: block;
+        float: left;
+        text-align: center; 
+        margin-top: 30px;
+    }
+    .column2 img{
+        width: 45%;
+    }
+    .column3{
+        width: 100%;
+        display: block;
+        float: left;
+        text-align: center; 
+    }
+    .column3 img{
+        width: 40%;
+    }
+        
+    body{
+        background: url("pic/BGAboutUs.png") no-repeat center center;
+       background-attachment: fixed;
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        box-sizing: border-box;
+        
+        
+        
+    }
+    .glowing-border {
+        border: 3px solid #dadada;
+        border-radius: 50%; 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+        width: 50%;
+        
+    }
+    
+    .glowing-border:focus { 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+    .glowing-boder:hover{
+        transition: 0.5s;
+        box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+    }
+    .btn {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+      
+        
+        
+        transition: all 0.3s ease;
+        border-radius: 50%;
+      }
+      
+      .btn:hover {
+        transition: all 0.3s ease;
+      }
+    .btn-glow:hover {
+        box-shadow: rgba(var(--primary-color), 1) 0px 0px 100px 0px;
+      }
+    
+    :root {
+        /* violet */
+        --primary-color: 111, 76, 255;
+    }
+    .banner{
+        width: 360px;
+        height: 70%;
+        top: 5%;
+        left: 10px;
+        
+        color: white;
+    }
+    .app-text{
+        width: 50%;
+        float: left;
+        margin-left: 15px;
+    }
+    .app-text h1{
+        font-size: 40px;
+        width: 360px;
+       margin-left: 0;
+      
+    }
+    .app-text h2{
+        font-size: 70px;
+        width: 360px;
+        margin-top: 50px;
+        
+        
+    }
+    .app-text p{
+        width: 360px;
+        font-size: 15px;
+        text-align: center;
+        margin-left: 0%;
+        line-height: 25px;
+        color: white;
+    }
+    .app-pic{
+        
+        width: 50%;
+        float: right;
+        
+    }
+    .app-pic img{
+        width: 70%;
+        margin-top: 20px;
+        margin-left: -50px;
+        
+        
+        box-shadow: rgba(var(--text-color), 1) 0px 0px 50px 0px;
+       
+    }
+  }
+  @media (max-width: 385px) {
+    .our{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 100px;
+        margin-top: 1000px;
+        
+    }
+    .row{
+        display: table;
+        
+       
+    }
+    .column1{
+        width: 50%;
+        
+        display: block;
+        float: left;
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    .column1 img{
+        width: 45%;
+    }
+    .txtbox{
+        font-size: 10px;
+        color: white;
+        border: solid white;
+        padding: 10px;
+        margin: 15px;
+    }
+    .txtbox1{
+        font-size: 10px;
+        color: white;
+        border: solid white;
+        padding: 10px 50px 10px ;
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+    }
+    .column2{
+        width: 50%;
+        
+        display: block;
+        float: left;
+        text-align: center; 
+        margin-top: 30px;
+    }
+    .column2 img{
+        width: 45%;
+    }
+    .column3{
+        width: 100%;
+        display: block;
+        float: left;
+        text-align: center; 
+    }
+    .column3 img{
+        width: 40%;
+    }
+        
+    body{
+        background: url("pic/BGAboutUs.png") no-repeat center center;
+       background-attachment: fixed;
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        box-sizing: border-box;
+        
+        
+        
+    }
+    .glowing-border {
+        border: 3px solid #dadada;
+        border-radius: 50%; 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+        width: 50%;
+        
+    }
+    
+    .glowing-border:focus { 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+    .glowing-boder:hover{
+        transition: 0.5s;
+        box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+    }
+    .btn {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+      
+        
+        
+        transition: all 0.3s ease;
+        border-radius: 50%;
+      }
+      
+      .btn:hover {
+        transition: all 0.3s ease;
+      }
+    .btn-glow:hover {
+        box-shadow: rgba(var(--primary-color), 1) 0px 0px 100px 0px;
+      }
+    
+    :root {
+        /* violet */
+        --primary-color: 111, 76, 255;
+    }
+    .banner{
+        width: 340px;
+        height: 70%;
+        top: 5%;
+        padding: 0%;
+        color: white;
+    }
+    .app-text{
+        width: 20%;
+        float: left;
+        margin-top: 150px;
+        padding: 0;
+    }
+    .app-text h1{
+        font-size: 25px;
+        width: 300px;
+        margin-right: 20px;
+      
+    }
+    .app-text h2{
+        font-size: 40px;
+        width: 300px;
+        margin-top: 50px;
+        
+        
+    }
+    .app-text p{
+        width: 300px;
+        font-size: 12px;
+        text-align: left;
+        margin-right: 20px;
+        line-height: 25px;
+        color: white;
+        margin: 0%;
+    }
+    .app-pic{
+        width: 50%;
+        float: left;
+        
+    }
+    .app-pic img{
+        width: 70%;
+        margin-top: 600px;
+        margin-left: 30px;
+        
+        
+        box-shadow: rgba(var(--text-color), 1) 0px 0px 50px 0px;
+       
+    }
+  }

@@ -1,0 +1,647 @@
+
+:root {
+	--color-bg: rgb(5, 18, 22);
+	--color-neon: rgba(66, 255, 239, 0.984);
+  }
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    scroll-behavior: smooth;
+    
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+header .logo
+{
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover{
+     background-color: white;
+     color: rgb(101, 7, 253);
+     transition: .3s;
+}
+header ul li a.active
+{
+    background:rgb(255, 255, 255);
+    color: #2b1055;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+section::before
+{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 100px;
+   background: linear-gradient(to top,rgba(66, 255, 239, 0.984),transparent);
+   z-index: 20;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    width: 100%;
+    
+}
+section img#moon
+{
+   mix-blend-mode:screen;
+   width: 20%;
+   margin-left: 40.5%;
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    color: #2be6b7;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    text-shadow: 0 0 0.1em hsl(0, 0%, 100%), 0 0 0.5em currentColor;
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block ;
+    padding: 0.25em 1em;
+    border-radius: 1em;
+    background: #fff;
+    color: var(--color-neon);
+    background: var(--color-bg);
+    border: var(--color-neon) 4px solid;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px) ; 
+    letter-spacing: 1px;  
+    text-shadow: 0 0 0.1em hsl(0, 0%, 100%), 0 0 0.5em currentColor;
+	box-shadow: inset 0 0 0.5em 0 var(--color-neon), 0 0 0.5em 0 var(--color-neon);
+  text-align: center;
+	transition: background 100ms linear;
+  position: relative;
+  width: 10%;
+ 
+}
+#btn::before {
+	content: "";
+	pointer-events: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 140%;
+	left: 0;
+	
+  }
+  #btn::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 0 2em 0.5em var(--color-neon);
+	transition: opacity 100ms linear;
+	opacity: 0;
+	-webkit-transition: opacity 100ms linear;
+	-moz-transition: opacity 100ms linear;
+	-ms-transition: opacity 100ms linear;
+	-o-transition: opacity 100ms linear;
+  }
+  #btn:hover {
+	text-shadow: 0;
+  }
+  #btn:hover::before {
+	opacity: 1;
+  }
+ #btn:hover::after {
+	opacity: 1;
+  }
+
+.img2{
+    margin-left: 300px;
+}
+.Frontline {
+    z-index: 10;
+    mix-blend-mode: overlay;
+}
+.Frontline1 {
+    z-index: 10;
+    mix-blend-mode: soft-light;
+}
+
+section img#mountains_front1
+{
+    z-index: 9;
+}
+
+button{
+  position: absolute;
+  top: 170%;
+  left: 25%;
+  width: 200px;
+  height: 70px;
+  margin: -100px 0 0 ;
+  text-align: center;
+  border-radius: 8px;
+  border: 3px solid rgb(0, 40, 70);
+  cursor: pointer;
+  background-color: #1c0522;
+  
+}
+button:hover {
+    animation: border-flicker 2s linear forwards;
+  }
+  
+ button h2 {
+    font-weight: 1000;
+    font-size:30px;
+    color: rgba(120, 0, 50, .5);
+  }
+  
+  button:hover h2 {
+    animation: text-flicker 2s linear forwards;
+  }
+  
+  button:hover .first {
+    animation: letter-flicker 3s linear infinite;
+  }
+#btn2{
+    position: absolute;
+    top: 180%;
+    left: 25%;
+    width: 200px;
+    height: 70px;
+    margin: -90px 0 0 ;
+    text-align: center;
+    border-radius: 8px;
+    border: 3px solid rgb(0, 40, 70);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block ;
+    background-color: #1c0522;
+        font-weight: 1000;
+        font-size:13px;
+        color: rgba(120, 0, 50, .5);
+        padding-top: 1px;
+        
+  }
+#btn2:hover {
+      animation: border-flicker 2s linear forwards,text-flicker 2s linear forwards;
+      
+    }
+    #btn2:hover .first {
+      animation: letter-flicker 3s linear infinite;
+    }
+  #btn3{
+      position: absolute;
+      top: 170%;
+      left: 30%;
+      width: 200px;
+      height: 70px;
+      margin: -90px 0 0 ;
+      text-align: center;
+      border-radius: 8px;
+      border: 3px solid rgb(0, 40, 70);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block ;
+      background-color: #1c0522;
+          font-weight: 1000;
+          font-size:13px;
+          color: rgba(120, 0, 50, .5);
+          padding-top: 1px;
+          
+    }
+  #btn3:hover {
+        animation: border-flicker 2s linear forwards,text-flicker 2s linear forwards;
+        
+      }
+      #btn3:hover .first {
+        animation: letter-flicker 3s linear infinite;
+      }
+  
+  @keyframes text-flicker {
+    2% { 
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    3% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    6% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    9% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    11% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    14% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    18% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    32% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    33% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    37% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    39% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    43% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    46% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    47% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    100% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+  }
+  
+  @keyframes letter-flicker {
+      2% { 
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    3% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    6% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    9% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    11% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    14% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    18% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    32% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    33% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    37% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    39% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+    }
+    40% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+    100% {
+      color: rgb(230, 0, 120);
+      text-shadow: 0 0 15px rgb(230, 0, 120);
+    }
+  }
+  
+  @keyframes border-flicker {
+    2% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    3% {
+      border: 3px solid rgb(0, 40, 70);
+      box-shadow: none;
+    }
+    5% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    6% {
+      border: 3px solid rgb(0, 40, 70);
+      box-shadow: none;
+    }
+    7% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    9% {
+      border: 3px solid rgb(0, 40, 70);
+      box-shadow: none;
+    }
+    13% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    16% {
+      border: 3px solid rgb(0, 40, 70);
+      box-shadow: none;
+    }
+    18% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    22% {
+      border: 3px solid rgb(0, 40, 70);
+      box-shadow: none;
+    }
+    34% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    36% {
+      border: 3px solid rgb(0, 40, 70);
+      box-shadow: none;
+    }
+    54% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    100% {
+      border: 3px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+  }
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.1s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 6%;
+    font-size: 60px;
+   width: 80%;
+   left: 9.5%;
+   cursor: pointer;
+   
+  }
+  .overlay .closebtn:hover{
+    box-shadow: 0 0 1em 0 var(--color-neon);
+    transition: 0.1s;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  mix-blend-mode:screen;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  
+}
+  .text {
+    color: black;
+    
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    
+  }
+  .text2{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    
+  }
+  .container:hover .overlay2 {
+    bottom: 0;
+    height: 100%;
+    
+   
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    float: right;
+  }
+  .sec3
+{
+    
+    position: relative;
+    padding: 0px;
+    background: #1c0522;
+}
+.sec3 img{
+  z-index:15; 
+}
+.sec3 img:hover{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.sec3 h2
+{
+ font-size: 2.5em;
+ margin-bottom: 10px;
+ color: white;
+ 
+}
+.sec3 p
+{
+    font-size: 1.25em;
+    color: white;
+}
+.container:hover .overlay3 {
+    
+  width: 40%;
+  
+ 
+}
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 50%;
+  overflow: hidden;
+  width: 0;
+  height:100%;
+  transition: .5s ease;
+  z-index: 10;
+}
+
+.container:hover .overlay4 {
+    
+  width: 50%;
+  height:100%;
+  
+ 
+}
+.overlay4 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0%;
+  background-color: #000000;
+  opacity: 50%;
+  overflow: hidden;
+  width: 0%;
+  height:0%;
+  transition: .5s ease;
+  z-index: 10;
+}
+.container:hover .overlay5 {
+    
+  width: 45%;
+  
+ 
+}
+.overlay5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 50%;
+  overflow: hidden;
+  width: 0;
+  height:100%;
+  transition: .5s ease;
+  z-index: 10;
+}

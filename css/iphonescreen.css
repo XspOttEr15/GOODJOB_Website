@@ -1,0 +1,156 @@
+@media (max-width: 600px) {
+    .our{
+        color: white;
+        text-align: center;
+        font-size: 100px;
+        margin-bottom: 100px;
+        margin-top: 5000px;
+    }
+    .row{
+        display: table;
+        
+       
+    }
+    .column1{
+        width: 25%;
+        
+        display: block;
+        float: left;
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    .txtbox{
+        font-size: 20px;
+        color: white;
+        border: solid white;
+        padding: 10px;
+        margin: 20px;
+    }
+    .txtbox1{
+        font-size: 20px;
+        color: white;
+        border: solid white;
+        padding: 10px 50px 10px ;
+        margin-top: 20px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 20px;
+    }
+    .column2{
+        width: 33.333%;
+        
+        display: block;
+        float: left;
+        text-align: center; 
+        margin-top: 30px;
+    }
+    .column3{
+        width: 100%;
+        display: block;
+        float: left;
+        text-align: center; 
+    }
+        
+    body{
+        background: url("pic/BGAboutUs.png") no-repeat center center;
+       background-attachment: fixed;
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        box-sizing: border-box;
+        
+        
+        
+    }
+    .glowing-border {
+        border: 3px solid #dadada;
+        border-radius: 50%; 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+        width: 50%;
+        
+    }
+    
+    .glowing-border:focus { 
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+    .glowing-boder:hover{
+        transition: 0.5s;
+        box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+    }
+    .btn {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 18px;
+      
+        
+        
+        transition: all 0.3s ease;
+        border-radius: 50%;
+      }
+      
+      .btn:hover {
+        transition: all 0.3s ease;
+      }
+    .btn-glow:hover {
+        box-shadow: rgba(var(--primary-color), 1) 0px 0px 100px 0px;
+      }
+    
+    :root {
+        /* violet */
+        --primary-color: 111, 76, 255;
+    }
+    .banner{
+        width: 80%;
+        height: 70%;
+        top: 5%;
+        left: 10px;
+        
+        color: white;
+    }
+    .app-text{
+        width: 50%;
+        float: left;
+
+    }
+    .app-text h1{
+        font-size: 43px;
+        width: 640px;
+        
+        margin-left: 150px;
+    }
+    .app-text h2{
+        font-size: 100px;
+        width: 1024px;
+        margin-left: 320px;
+        
+    }
+    .app-text p{
+        width: 650px;
+        font-size: 500px;
+        margin-left: 170px;
+        margin-right: 170px;
+        line-height: 25px;
+        color: white;
+    }
+    .app-pic{
+        
+        width: 50%;
+        float: right;
+        
+    }
+    .app-pic img{
+        width: 70%;
+        margin-top: 800px;
+        margin-left: -50px;
+        
+        
+        box-shadow: rgba(var(--text-color), 1) 0px 0px 50px 0px;
+       
+    }
+  }

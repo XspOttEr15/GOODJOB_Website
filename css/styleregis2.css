@@ -1,0 +1,298 @@
+body{
+    margin : 0;
+    padding: 0;
+    font-family: monospace;
+    background-image: url("pic/live01.gif");
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(117, 253, 224), rgb(18, 110, 106));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 10px;
+    box-shadow: rgba(var(--hover), 1) 0px 0px 50px 0px ;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom:1px solid white ;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+form .txt_field1{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    background: transparent;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(13, 14, 33);
+    color: white;
+}
+.txt_field1 input{
+    width: 100%;
+    padding: 0 5px;
+    height: 100px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(13, 14, 33);
+    color: white;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s; 
+}
+.txt_field1 label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s; 
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background:  linear-gradient(to right, rgb(2, 10, 117), rgb(78, 238, 225)) ;
+    transition: .5s;
+}
+.txt_field1 span::before{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background:  linear-gradient(to right, rgb(2, 10, 117), rgb(78, 238, 225)) ;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #6bf7d4;
+}
+.txt_field1 input:focus ~ label,
+.txt_field1 input:valid ~ label{
+    top: -5px;
+    color: #6bf7d4;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.txt_field1 input:focus ~ span::before,
+.txt_field1 input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: white; 
+}
+input[type="checkbox"]{
+    color: #19ffcd;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(97, 252, 231), rgb(22, 28, 114));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 25px;
+    font-size: 18px;
+    color: rgba(var(--text-color));
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+    transition: .5s;
+}
+
+:root {
+    /* violet */
+    --primary-color: 111, 76, 255;
+    --hover: 255, 255, 255;
+    
+    /* white */
+    --text-color: 256, 256, 256;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        height: 900px;
+        background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(117, 253, 224), rgb(18, 110, 106));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        border-radius: 10px;
+        box-shadow: rgba(var(--hover), 1) 0px 0px 50px 0px ;
+    }
+    .center h1{
+        text-align: center;
+        padding: 0 0 50px 0;
+        border-bottom:1px solid white ;
+        font-size: 50px;
+    }
+    .center form{
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+    form .txt_field{
+        position: relative;
+        border-bottom: 2px solid white;
+        margin: 60px 0;
+    }
+    .txt_field input{
+        width: 100%;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        background-color: rgb(13, 14, 33);
+        color: white;
+    }
+    .txt_field label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        color: white;
+        transform: translateY(-50%);
+        font-size: 30px;
+        pointer-events: none;
+        transition: 0.5s; 
+    }
+    .txt_field span::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        width: 0%;
+        height: 2px;
+        background:  linear-gradient(to right, rgb(2, 10, 117), rgb(78, 238, 225)) ;
+        transition: .5s;
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+        top: -20px;
+        color: #6bf7d4;
+    }
+    .txt_field input:focus ~ span::before,
+    .txt_field input:valid ~ span::before{
+        width: 100%;
+    }
+    form .txt_field1{
+        position: relative;
+        border-bottom: 2px solid white;
+        margin: 60px 0;
+    }
+    .txt_field1 input{
+        width: 100%;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        background-color: rgb(13, 14, 33);
+        color: white;
+    }
+    .txt_field1 label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        color: white;
+        transform: translateY(-50%);
+        font-size: 30px;
+        pointer-events: none;
+        transition: 0.5s; 
+    }
+    .txt_field1 span::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        width: 0%;
+        height: 2px;
+        background:  linear-gradient(to right, rgb(2, 10, 117), rgb(78, 238, 225)) ;
+        transition: .5s;
+    }
+    .txt_field1 input:focus ~ label,
+    .txt_field1 input:valid ~ label{
+        top: -20px;
+        color: #6bf7d4;
+    }
+    .txt_field1 input:focus ~ span::before,
+    .txt_field1 input:valid ~ span::before{
+        width: 100%;
+    }
+    .pass{
+        margin: -5px 0 20px 5px;
+        color: white; 
+        font-size: 20px;
+    }
+    input[type="checkbox"]{
+        color: #19ffcd;
+        
+    }
+    
+    input[type="submit"]{
+        width: 100%;
+        height: 70px;
+        border: 2px double transparent;
+        background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(97, 252, 231), rgb(22, 28, 114));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        border-radius: 25px;
+        font-size: 25px;
+        color: rgba(var(--text-color));
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+    }
+    input[type="submit"]:hover{
+        box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+        transition: .5s;
+    }
+    
+  }
+  

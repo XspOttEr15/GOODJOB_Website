@@ -1,0 +1,502 @@
+
+/* ----------------- Nav PAGE --------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.lol
+{
+    text-align: center;
+}
+.nav
+{
+    z-index: 25;
+    width: 100%;
+    top:0;
+    position: fixed;
+
+}
+.position
+{
+    z-index: 10;
+    width: 100%;
+    top:0;
+}
+.LOGO
+{
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px -20px -20px;
+  padding: 0px;
+}
+.Logo ul{
+   padding: 25px 20px 0 25px;
+   font-family: "monospace", sans-serif;
+   font-size: 40px;
+   color: white;
+   float:left;
+   margin: 0;
+}
+.Logo ul:hover {
+   cursor:default;
+}
+.nav ul {
+  list-style: none;
+  background-color: #1e2522;
+  text-align: right;
+  padding: 20px 20px 20px 20px;
+  margin: 0px;
+}
+.nav li {
+  font-size:25px;
+  line-height: 40px;
+  text-align: left;
+  margin-right: 20px;
+}
+.nav a {
+     text-decoration: none;
+     color:white;
+     display: block;
+     border-bottom: 1px solid #206F61;
+     transition: .3s;
+     font-size: 20px;
+     text-align: center;
+}
+.nav a:hover {
+  background-color: #197e64;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #2be6b7;
+  margin-left: -10px;
+}
+#NA
+{
+    text-align: center;
+    width: 110%;
+    
+    font-size: 18px;
+}
+#NA:hover
+{
+    background-color: #206F61;
+    
+}
+#PSP
+{
+    width: 120px;
+    padding: -10px;
+}
+.nav a.active {
+  color: white ;
+  cursor: default;
+ 
+}
+.nav a.active:hover {
+  background-color: #197e64;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #2be6b7;
+ 
+}
+.nav li li {
+    font-size: 18px;
+  
+    
+}
+/*----------------------------------- IPHONE -------------------------------------------*/
+@media screen and (min-width: 500px) {
+        .nav li {
+         width: 110px;
+         border-bottom: none;
+         height: 50px;
+         line-height: 50px;
+         font-style: 1.4cm;
+         display: inline-block;
+         margin-right: -4px;
+        }
+        .nav a {
+            border-bottom: none;
+        }
+        .nav > ul > li {
+            text-align: center;
+        }
+        .nav > ul >li >a {
+            padding-left: 0;
+        }
+        .nav li ul {
+            position:absolute;
+            display: none;
+            width: inherit;
+        }
+        .nav li:hover ul {
+            display:block;
+        }
+        .nav li ul li {
+            display: block;
+        }
+        #NA
+{
+    text-align: center;
+    width: 105%;
+    margin-left: -15px;
+    font-size: 15px;
+}
+        .searchtext 
+        {    float: right;
+             margin: 13px 0 0 0;
+             cursor: text;
+             
+}
+.searchbox {
+      float:right;
+      margin: 6px 50px 10px 10px;
+      box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+      background:linear-gradient(to bottom, #878FDE 5%, #40446E 100%);
+      background-color:#79bbff;
+      border-radius:9px;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:monospace;
+      font-size:18px;
+      padding:7px 15px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #528ecc;
+}
+.searchbox:hover {
+background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+background-color:#378de5;
+
+
+}
+
+.searchbox:active {
+top:1px;
+
+
+}
+.position- {
+z-index: -1;
+}
+.position+ {
+z-index: 1;
+}
+.Login
+{
+  float: right 
+}
+/*----------------------------------- Ends-------------------------------------------*/
+
+@import url("CSS\ slideshow0.1.html");}
+
+
+
+@media screen and (max-width: 414px ) {
+    .nav li {
+        width: 80px;
+        border-bottom: none;
+        height: 30px;
+        line-height: 20px;
+        font-style: 1.4cm;
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 12px;
+       }
+       .nav a {
+           border-bottom: none;
+       }
+       .nav > ul > li {
+           text-align: center;
+       }
+       .nav > ul >li >a {
+           padding-left: 0;
+       }
+       .nav li ul {
+           position:absolute;
+           display: none;
+           width: inherit;
+       }
+       .nav li:hover ul {
+           display:block;
+       }
+       .nav li ul li {
+           display: block;
+       }
+       .searchtext 
+       {    float: right;
+            margin: 13px 0 0 0;
+            cursor: text;
+}
+.searchbox {
+     float:right;
+     margin: 6px 50px 10px 10px;
+     box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+     background:linear-gradient(to bottom, #878FDE 5%, #40446E 100%);
+     background-color:#79bbff;
+     border-radius:9px;
+     cursor:pointer;
+     color:#ffffff;
+     font-family:monospace;
+     font-size:18px;
+     padding:7px 15px;
+     text-decoration:none;
+     text-shadow:0px 1px 0px #528ecc;
+}
+.searchbox:hover {
+background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+background-color:#378de5;
+
+
+}
+.searchbox:active {
+top:1px;
+
+
+}
+.position- {
+z-index: -1;
+}
+.position+ {
+z-index: 1;
+}
+.Login
+{
+ float: right 
+}
+.nav ul {
+    list-style: none;
+    background-color: #1e2522;
+    text-align: left;
+    padding: 100px 50px 50px 50px;
+}
+.LOGO
+{
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px -20px -20px;
+    padding: 0px;
+}
+.Logo ul{
+     padding: 25px 50px 25px 25px;
+     font-family: "monospace", sans-serif;
+     font-size: 25px;
+     color: white;
+}
+.nav a {
+    text-decoration: none;
+    color:white;
+    display: block;
+    border-bottom: 1px solid #206F61;
+    transition: .3s;
+    font-size: 12px;
+    text-align: center;
+}
+.nav a:hover {
+ background-color: #197e64;
+ padding-bottom: 5px;
+ border-bottom: 3px solid #2be6b7;
+ margin-left: -10px;
+}
+.Login
+{
+  float: left 
+}
+
+#GJ
+{
+    padding: 25px 10px 25px 40px;
+}
+#NA
+{
+margin-top: 10px;
+margin-left: -50px;
+text-align: left;
+font-size: 12px;
+
+}
+#NA:hover
+{
+    background-color: #206F61;
+    
+}
+ul#PSP
+{
+   padding-bottom: 0px;
+   padding-top: 0px;
+}
+.Purchase 
+{
+position: relative;
+display: inline-block;
+padding: 25px 30px;
+margin: 40px 20;
+color: #2be6b7 ;
+font-size: 24px;
+text-decoration: none;
+text-transform: uppercase;
+transition: 0.5s;
+letter-spacing: 4px;
+margin-top: 0px;
+}
+.Purchase:hover
+{
+background: #2be6b7;
+color: #050801;
+box-shadow: 0 0 5px #2be6b7,
+            0 0 25px #2be6b7,
+            0 0 50px #2be6b7,
+            0 0 200px #2be6b7;
+}
+.container-products {
+max-width: 650px;
+justify-content: space-around;
+margin: 0 auto;
+margin-top: 150px;
+color: #fff;
+
+}
+
+.container-products ion-icon {
+font-size: 25px;
+color: blue;
+margin-left: 10px;
+margin-right: 10px;
+cursor: pointer;
+color: #fff;
+}
+}
+/*----------------------------------- Ends-------------------------------------------*/
+
+
+/*----------------------------------- Galaxy S5-------------------------------------------*/
+
+@media screen and (max-width: 360px ) {
+.nav li {
+    width: 80px;
+    border-bottom: none;
+    height: 30px;
+    line-height: 30px;
+    font-style: 1.4cm;
+    display: inline-block;
+    margin-right: -4px;
+    margin-left: 20px;
+   }
+   .nav a {
+       border-bottom: none;
+   }
+   .nav > ul > li {
+       text-align: center;
+   }
+   .nav > ul >li >a {
+       padding-left: 0;
+   }
+   .nav li ul {
+       position:absolute;
+       display: none;
+       width: inherit;
+   }
+   .nav li:hover ul {
+       display:block;
+   }
+   .nav li ul li {
+       display: block;
+   }
+   .searchtext 
+   {    float: right;
+        margin: 13px 0 0 0;
+        cursor: text;
+}
+.searchbox {
+ float:right;
+ margin: 6px 50px 10px 10px;
+ box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+ background:linear-gradient(to bottom, #878FDE 5%, #40446E 100%);
+ background-color:#79bbff;
+ border-radius:9px;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:monospace;
+ font-size:18px;
+ padding:7px 15px;
+ text-decoration:none;
+ text-shadow:0px 1px 0px #528ecc;
+}
+.searchbox:hover {
+background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+background-color:#378de5;
+
+
+}
+.searchbox:active {
+top:1px;
+
+
+}
+.position- {
+z-index: -1;
+}
+.position+ {
+z-index: 1;
+}
+.Login
+{
+float: right 
+}
+.nav ul {
+list-style: none;
+background-color: #1e2522;
+text-align: left;
+padding: 20px 70px 30px 63px;
+align-items: center;
+
+
+}
+.LOGO
+{
+width: 40px;
+height: 40px;
+margin: 0px 0px -20px -20px;
+padding: 0px;
+}
+.Logo ul{
+ padding: 25px 50px 25px 25px;
+ font-family: "monospace", sans-serif;
+ font-size: 20px;
+ color: white;
+}
+.nav a {
+text-decoration: none;
+color:white;
+display: block;
+border-bottom: 1px solid #206F61;
+transition: .3s;
+font-size: 12px;
+text-align: center;
+}
+.nav a:hover {
+background-color: #197e64;
+padding-bottom: 5px;
+border-bottom: 3px solid #2be6b7;
+margin-left: -10px;
+}
+.Login
+{
+float: left 
+}
+
+#GJ
+{
+padding: 25px 10px 25px 80px;
+}
+#NA
+{
+margin-left: -50px;
+text-align: center;
+font-size: 12px;
+
+}
+#NA:hover
+{
+background-color: #206F61;
+
+}
+
+}
+/*----------------------------------- Ends-------------------------------------------*/
